@@ -3,36 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Video and Image</title>
+    <title>Infrastructure Success</title>
     <style>
-        body {
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
-            background-image: url('mell.png');
+            font-family: Arial, sans-serif;
+            background-image: url('gogs.jpeg');
             background-size: cover;
             background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: Arial, sans-serif;
-            overflow: hidden; /* Prevents scrollbars */
+            background-repeat: no-repeat;
         }
-        .container {
-            text-align: center;
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translate(0, -50%);
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: right;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>chto ti dumal vskazku papal? xui tebe bliad... paiexali!</h1>
+    <div class="centered-text">
+        Congratulations your infrastructure is working.<br>
+        Time to apply this to production Environment.
     </div>
-
-    <audio autoplay loop>
-        <source src="videoplayback.mp4" type="video/mp4">
-        Your browser does not support the audio element.
-    </audio>
 </body>
 </html>
-
